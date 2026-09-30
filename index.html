@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 - 사진 정리함 (PhotoTidy)</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.65; color: #1a1a1a; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.92em; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; }
+  th { background: #f4f4f4; }
+  code { background: #f0f0f0; padding: 1px 5px; border-radius: 3px; }
+  .meta { color: #666; font-size: 0.9em; }
+  a { color: #0a5fc4; }
+</style>
+</head>
+<body>
+
+<h1>사진 정리함 개인정보처리방침</h1>
+<p class="meta">시행일: 2026-09-30</p>
+
+<h2>1. 기본 원칙</h2>
+<p>사진 정리함(이하 "앱")은 사진·동영상 분석 기능을 원칙적으로 기기 안에서만(온디바이스) 처리합니다. 사진·동영상 원본은 어떤 경우에도 서버로 전송하지 않습니다.</p>
+
+<h2>2. 수집하는 정보와 처리 목적</h2>
+<table>
+<tr><th>항목</th><th>목적</th><th>전송 여부</th></tr>
+<tr><td>사진 메타데이터(촬영일시, 파일 크기, 위치 좌표)</td><td>타임라인·중복/유사 사진 탐지·용량 분석을 위해 기기 내부 데이터베이스에만 저장</td><td>전송 안 함</td></tr>
+<tr><td>지각적 해시(pHash), 흐림도</td><td>중복·유사·흐릿한 사진 탐지</td><td>전송 안 함</td></tr>
+<tr><td>OCR 인식 텍스트</td><td>스크린샷·기프티콘 자동 분류</td><td>전송 안 함</td></tr>
+<tr><td>이미지 라벨</td><td>사진 태그 검색</td><td>전송 안 함</td></tr>
+<tr><td>얼굴 특징 벡터(생체정보, 3항 참조)</td><td>인물별 사진 그룹핑</td><td>전송 안 함</td></tr>
+<tr><td>구매 내역</td><td>RevenueCat을 통한 구독 관리 (앱 계정과 무관한 익명 ID)</td><td>RevenueCat으로 전송</td></tr>
+</table>
+
+<h2>3. 생체정보(얼굴 인식 데이터) 처리에 관한 사항</h2>
+<p>"인물" 기능을 사용하면 사진 속 얼굴에서 192차원 특징 벡터를 추출해 기기 내부 데이터베이스에 저장합니다. 이 벡터는 개인을 식별할 수 있는 생체인식정보에 해당하며, 온디바이스에서만 처리되고 외부로 전송되지 않습니다.</p>
+<p><strong>보관 기간:</strong> 사용자가 삭제하거나 앱을 삭제할 때까지.<br>
+<strong>삭제 방법:</strong> 설정 → "얼굴 데이터 전체 삭제"에서 전체 삭제, 또는 인물 상세 화면에서 특정 인물만 개별 삭제할 수 있습니다.<br>
+<strong>동의:</strong> "인물" 기능을 처음 열 때 별도 동의 화면에서 명시적으로 동의를 받으며, 동의하지 않아도 다른 기능은 그대로 이용할 수 있습니다. 동의를 철회하려면 설정 → "얼굴 데이터 전체 삭제"를 이용하세요.</p>
+
+<h2>4. 위치정보 처리에 관한 사항</h2>
+<p>설정에서 "타임라인에 지명 표시"를 켠 경우에만, 사진 좌표를 약 2km 격자 단위로 뭉갠 좌표를 기기 OS의 지오코딩 서비스(Android: Google, iOS: Apple)로 전송해 지명을 조회합니다. 정확한 원본 좌표는 전송하지 않으며, 이 기능은 기본값이 꺼짐 상태입니다. 언제든 설정에서 끌 수 있습니다.</p>
+
+<h2>5. 제3자 제공 및 처리 위탁</h2>
+<ul>
+  <li><strong>RevenueCat</strong> — 구독 결제 처리 (익명 App User ID만 사용, 계정 연동 없음) — <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+  <li><strong>Google AdMob</strong> — 리워드 광고 게재 (iOS는 추적 허용 동의 후에만 맞춤 광고) — <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li><strong>Android/iOS 지오코딩 서비스</strong> — 4항의 지명 표시 기능에 한함</li>
+</ul>
+<p>위 사업자 외에 개인정보를 제공하지 않습니다.</p>
+
+<h2>6. 이용자 권리</h2>
+<p>이용자는 언제든 다음을 수행할 수 있습니다.</p>
+<ul>
+  <li>얼굴 인식 데이터 전체/개별 삭제 (설정 → 얼굴 데이터 전체 삭제, 또는 인물 상세 화면)</li>
+  <li>위치 정보 전송 기능 끄기 (설정 → 타임라인에 지명 표시)</li>
+  <li>잠금 보관함 데이터 삭제 (보관함에서 개별 삭제)</li>
+  <li>앱 삭제 시 기기 내 모든 데이터 자동 삭제</li>
+</ul>
+
+<h2>7. 문의처</h2>
+<p><a href="mailto:omeano.kim@gmail.com">omeano.kim@gmail.com</a></p>
+
+</body>
+</html>
