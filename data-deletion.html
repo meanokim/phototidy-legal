@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>데이터 삭제 안내 - 사진 정리함 (PhotoTidy)</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.65; color: #1a1a1a; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.15em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.92em; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; }
+  th { background: #f4f4f4; }
+  .meta { color: #666; font-size: 0.9em; }
+  a { color: #0a5fc4; }
+  ol { padding-left: 1.3em; }
+  li { margin-bottom: 0.5em; }
+</style>
+</head>
+<body>
+
+<h1>사진 정리함(PhotoTidy) 데이터 삭제 안내</h1>
+<p class="meta">개발자: Meano · 최종 수정일: 2026-10-01</p>
+
+<p>사진 정리함은 대부분의 데이터를 사용자 기기 안에서만 저장하며, 서버에 계정을 만들지 않습니다. 아래 방법으로 데이터를 삭제할 수 있습니다.</p>
+
+<h2>1. 앱 안에서 바로 삭제하기</h2>
+<ol>
+  <li><strong>얼굴 인식 데이터(생체정보):</strong> 앱 실행 → 설정 → "얼굴 데이터 전체 삭제" 선택 → 확인. 또는 인물 상세 화면에서 특정 인물만 개별 삭제할 수 있습니다.</li>
+  <li><strong>잠금 보관함 사진:</strong> 잠금 보관함 화면에서 항목을 선택해 개별 삭제할 수 있습니다.</li>
+  <li><strong>위치 정보 전송 중단:</strong> 설정 → "타임라인에 지명 표시" 스위치를 꺼서 언제든 중단할 수 있습니다.</li>
+</ol>
+
+<h2>2. 앱을 삭제(제거)하는 경우</h2>
+<p>앱을 기기에서 삭제하면 사진 인덱스, 얼굴 인식 데이터, pHash, OCR 텍스트, 잠금 보관함 암호화 파일 등 기기에 저장된 모든 데이터가 즉시 함께 삭제됩니다. 별도 보관 기간 없이 즉시 삭제됩니다.</p>
+
+<h2>3. 외부 서비스에 저장된 데이터 삭제 요청</h2>
+<p>구독 결제 처리를 위해 RevenueCat에 저장되는 익명 구매 기록 삭제, 또는 기타 문의는 아래 이메일로 요청해 주세요. 요청 확인 후 지체 없이 처리합니다.</p>
+<p><a href="mailto:omeano.kim@gmail.com">omeano.kim@gmail.com</a></p>
+
+<h2>삭제/보관되는 데이터 유형 및 보관 기간</h2>
+<table>
+<tr><th>데이터 유형</th><th>저장 위치</th><th>보관 기간</th></tr>
+<tr><td>사진 메타데이터, pHash, 흐림도, OCR 텍스트, 이미지 라벨</td><td>기기 내부 DB</td><td>삭제 또는 앱 삭제 시까지</td></tr>
+<tr><td>얼굴 특징 벡터(생체정보)</td><td>기기 내부 DB</td><td>"얼굴 데이터 전체 삭제" 또는 앱 삭제 시까지</td></tr>
+<tr><td>잠금 보관함 암호화 사진</td><td>기기 내부 저장소</td><td>개별 삭제 또는 앱 삭제 시까지</td></tr>
+<tr><td>구매/구독 내역(익명 ID)</td><td>RevenueCat</td><td>이메일 요청 시 삭제 처리</td></tr>
+</table>
+
+<p><a href="./">개인정보처리방침으로 돌아가기</a></p>
+
+</body>
+</html>
